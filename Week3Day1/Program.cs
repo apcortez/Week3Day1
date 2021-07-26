@@ -23,6 +23,7 @@ namespace Week3Day1
 
             }
 
+            //Iterazione
             for(int i = 0; i<=numero; i++)
             {
                 fattoriale = fattoriale * i;
