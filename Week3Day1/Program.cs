@@ -34,8 +34,24 @@ namespace Week3Day1
             //{
             //    fattoriale = fattoriale * i;
             //}
+
+            //Ricorsione
+            int fattorialeRicorsione = FattorialeRicorsione(numero);
+        
         }
 
-        
+        //Ricorsione Metodo
+        public static int FattorialeRicorsione(int numero)
+        {
+            if(numero ==0)
+            {
+                return 1;
+
+            }
+            else
+            {
+                return numero * FattorialeRicorsione(numero - 1);
+            }
+        }
     }
 }
