@@ -37,6 +37,24 @@ namespace Week3Day1
             int[] array;
             Person p;
 
+            Person persona1 = new Person();
+            persona1.Nome = "Angelica";
+            persona1.Eta = 27;
+            Person persona2 = persona1;
+
+            Console.WriteLine($"La persona 1 si chiama {persona1.Nome} e ha {persona1.Eta} anni"); //Angelica 27
+            Console.WriteLine($"La persona 2 si chiama {persona2.Nome} e ha {persona2.Eta} anni"); //Angelica 27
+
+            persona1.Nome = "Arianna";
+            persona1.Eta = 30;
+
+            Console.WriteLine($"La persona 1 si chiama {persona1.Nome} e ha {persona1.Eta} anni"); //Arianna 30
+            Console.WriteLine($"La persona 2 si chiama {persona2.Nome} e ha {persona2.Eta} anni"); //Arianna 30
+            //Come vediamo dalle stampe cambiando il valore dell'oggetto persona1 cambia anche il valore dell'oggetto persona2
+            //perchè puntano allo stesso puntatore (persona2 punta allo stesso puntatore di memoria di persona1), essendo passati per riferimento.
+            //modificano la stessa cella heap.
+
+
 
         }
 
