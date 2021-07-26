@@ -7,8 +7,13 @@ namespace Week3Day1
         static void Main(string[] args)
         {
             //IterazioneVsRicorsione();
-            ValueVsReferenceType();
-        
+            //ValueVsReferenceType();
+            EsempioStruct();
+        }
+
+        private static void EsempioStruct()
+        {
+            
         }
 
         private static void ValueVsReferenceType()
