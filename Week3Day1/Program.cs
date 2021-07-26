@@ -13,7 +13,25 @@ namespace Week3Day1
 
         private static void ValueVsReferenceType()
         {
+            //Value Type sono strutture ed enum --> Struct && enum
+            //Esempi di value type
+            int i;
+            double d;
+            bool isValid;
+            DateTime dt;
+            Season season;
+            DateTime dt1 = new DateTime();
+
             
+
+        }
+
+        enum Season
+        {
+            Spring, 
+            Summer,
+            Autumn,
+            Winter
         }
 
         private static void IterazioneVsRicorsione()
