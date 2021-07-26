@@ -21,8 +21,22 @@ namespace Week3Day1
             DateTime dt;
             Season season;
             DateTime dt1 = new DateTime();
+            int primoValore = 100;
+            int secondoValore = primoValore;
+            Console.WriteLine($"Il valore del mio primoValore è {primoValore}");     //100
+            Console.WriteLine($"Il valore del mio secondoValore è {secondoValore}"); //100
 
-            
+            primoValore = 200;
+            Console.WriteLine($"Il valore del mio primoValore è {primoValore}");     //200
+            Console.WriteLine($"Il valore del mio secondoValore è {secondoValore}"); //100
+
+
+
+            //Reference Type = 2 variabili possono far riferimento allo stesso oggetto presente nell'heap
+            string s;
+            int[] array;
+            Person p;
+
 
         }
 
