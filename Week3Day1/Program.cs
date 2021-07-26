@@ -57,7 +57,32 @@ namespace Week3Day1
             //Null '?' per value type
             int? n = null;  //-> n = null, senza '?' non si possono inizializzare i type value = null. Per valorizzarli nulli devi mettere '?'
             double? d;
-            bool? isValid;
+            //bool? isValid;
+
+            //Non posso passare un valore nullable a un value type non nullabile
+            //esempio errore:
+            //int c = n;
+            
+            n = 3;
+            int c = (int)n; //devi fare il cast forzato ad int prima di passarlo ad un type value
+
+            bool? isValid = null;
+            //metodo 1
+            var valoreBool = isValid.HasValue ? isValid.Value : false;
+            
+            //metodo 2
+            valoreBool = isValid ?? false; //se ha il valore allora assegna il valore altrimenti false
+
+            //metodo 3 per rappresentare il ternario è 
+            //if(isValid != null)
+            //{
+            //    valoreBool = isValid.Value;
+            //}
+            //else
+            //{
+            //    valoreBool = false;
+            //}
+
 
         }
 
