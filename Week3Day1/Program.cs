@@ -15,9 +15,9 @@ namespace Week3Day1
         {
             //Value Type sono strutture ed enum --> Struct && enum
             //Esempi di value type
-            int i;
-            double d;
-            bool isValid;
+            //int i;
+            //double d;
+            //bool isValid;
             DateTime dt;
             Season season;
             DateTime dt1 = new DateTime();
@@ -54,7 +54,10 @@ namespace Week3Day1
             //perchè puntano allo stesso puntatore (persona2 punta allo stesso puntatore di memoria di persona1), essendo passati per riferimento.
             //modificano la stessa cella heap.
 
-
+            //Null '?' per value type
+            int? n = null;  //-> n = null, senza '?' non si possono inizializzare i type value = null. Per valorizzarli nulli devi mettere '?'
+            double? d;
+            bool? isValid;
 
         }
 
