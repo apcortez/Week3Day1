@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Esercizio3
 {
-    class Rettangolo : FormeGeometriche
+    class Rettangolo : FormeGeometriche, IFormeGeometriche
+    {
+
+        public double Raggio { get; set; }
     {
         public double Larghezza { get; set; }
         public double Altezza { get; set; }
@@ -38,6 +41,16 @@ namespace Esercizio3
             Console.WriteLine("Altezza: " + Altezza);
             Console.WriteLine("Area: " + CalcolaArea());
             Console.WriteLine("Perimetro: " + CalcolaPerimetro());
+        }
+
+        public void SaveToFile(string fileName)
+        {
+            
+        }
+
+        public void LoadFromFile(string fileName)
+        {
+           
         }
     }
 }

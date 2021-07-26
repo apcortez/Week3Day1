@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Esercizio3
 {
-    interface IPFormeGeometriche
+    interface IFormeGeometriche
     {
+        public void SaveToFile(string fileName);
+        public void LoadFromFile(string fileName);
     }
 }

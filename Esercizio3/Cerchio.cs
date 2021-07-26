@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Esercizio3
 {
-    class Cerchio : FormeGeometriche
+    class Cerchio : FormeGeometriche, IFormeGeometriche
     {
 
         public double Raggio { get; set; }
@@ -41,7 +41,17 @@ namespace Esercizio3
             Console.WriteLine("Raggio: " + Raggio);
             Console.WriteLine("Circonferenza: " + CalcolaPerimetro());
             Console.WriteLine("Area: " + CalcolaArea());
-            Console.WriteLine("Coordinata: X - " + Coordinate.X + " Y - "+Coordinate.Y);
+            Console.WriteLine("Coordinata: X - " + Coordinate.X + ", Y - "+Coordinate.Y);
+        }
+
+        public void SaveToFile(string fileName)
+        {
+            
+        }
+
+        public void LoadFromFile(string fileName)
+        {
+            
         }
     }
         public struct Centro

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Esercizio3
 {   
-    abstract class FormeGeometriche : IPFormeGeometriche
+    abstract class FormeGeometriche
     {
         public string Nome { get; set; }
 
