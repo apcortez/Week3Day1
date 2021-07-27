@@ -15,7 +15,8 @@ namespace Esercizio2
 
             for(int i =0; i< MatrixCarta.Length; i++)
             {
-                MatrixCarta[i] = (int)numCarta[i];
+                //MatrixCarta[i] = (int)numCarta[i];
+                MatrixCarta[i] = (int)Char.GetNumericValue(numCarta[i]);
             }
 
             return MatrixCarta;
