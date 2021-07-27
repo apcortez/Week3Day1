@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,7 @@ namespace Esercizio3
     {
 
         public double Raggio { get; set; }
-    {
+    
         public double Larghezza { get; set; }
         public double Altezza { get; set; }
 
@@ -43,14 +44,24 @@ namespace Esercizio3
             Console.WriteLine("Perimetro: " + CalcolaPerimetro());
         }
 
-        public void SaveToFile(string fileName)
+        public void SaveToFile(string path)
         {
-            
+            using(StreamWriter sw1 = new StreamWriter(path))
+            {
+                sw1.WriteLine($"***FORMA {Nome.ToUpper()}***");
+                sw1.WriteLine("Larghezza: " + Larghezza);
+                sw1.WriteLine("Altezza: " + Altezza);
+                sw1.WriteLine("Area: " + CalcolaArea());
+                sw1.WriteLine("Perimetro: " + CalcolaPerimetro());
+            }
         }
 
-        public void LoadFromFile(string fileName)
+        public void LoadFromFile(string path)
         {
-           
+           using(StreamReader sw1 = new StreamReader(path))
+            {
+                string contenuto = sw1.ReadToEnd();
+            }
         }
     }
 }

@@ -31,18 +31,18 @@ namespace Esercizio3
     {
         static void Main(string[] args)
         {
-            Menu.Start();
-            //Centro c = new Centro { X = 5, Y = 7 };
-            //FormeGeometriche f1 = new Cerchio(10, new Centro { X = 5, Y = 7 });
-            //FormeGeometriche f2 = new Rettangolo(10, 5);
-            //FormeGeometriche f3 = new Triangolo(10, 5);
+
+            Centro c = new Centro { X = 5, Y = 7 };
+            FormeGeometriche f1 = new Cerchio(10, new Centro { X = 5, Y = 7 });
+            FormeGeometriche f2 = new Rettangolo(10, 5);
+            FormeGeometriche f3 = new Triangolo(10, 5);
 
 
-            //f1.PrintForma();
-            //Console.WriteLine("\n");
-            //f2.PrintForma();
-            //Console.WriteLine("\n");
-            //f3.PrintForma();
+            f1.PrintForma();
+            Console.WriteLine("\n");
+            f2.PrintForma();
+            Console.WriteLine("\n");
+            f3.PrintForma();
         }
     }
 }
